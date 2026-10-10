@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 13px 0px 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+}
+.nav-left{
+    display: flex;
+
+}
+.nav-left .fa-facebook{
+    color: #1877f2;
+    font-size: 40px;
+
+}
+.search{
+    position: relative;
+
+}
+.search .fa-solid{
+    color: gray;
+    position: absolute;
+    font-size: 15px;
+    left: 15px;
+    top: 12px;
+}
+.search input{
+    border: none;
+    margin-left: 5px;
+    background-color: #f0f2f5;
+    padding: 7px 16px 9px 36px;
+    border-radius: 50px;
+    color: gray;
+    font-size: 15px;
+    height: 40px;
+}
+.search input:focus{
+    outline: none;
+}
+.nav-middle{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 20px; */
+}
+.nav-middle a{
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    margin: 0px 15px;
+    padding: 10px 30px;
+
+}
+.nav-middle a:hover{
+    background-color: #f0f2f5;
+    border-radius: 10px;
+}
+.nav-middle a.active{
+    color: #1877f2;
+    border-bottom: 3px solid #1877f2;
+}
+.nav-right{
+    display: flex;
+
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    padding: 2px 10px 2px 2px;
+
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.nav-right .profile p{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.nav-right a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(213, 212, 212, 0.634);
+    font-size: 20px;
+    margin:  5px;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.sec-all{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f2f5;
+}
+.left-side{
+    background-color: #f0f2f5;
+    width: 25%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.left-side:hover{
+    overflow: scroll;
+}
+.left-side li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+
+}
+.left-side li img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.left-side li p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.middle{
+    padding: 0px 70px;
+    /* margin-right: px; */
+    /* margin-top: 60px; */
+
+}
+.container{
+    display: flex;
+    margin-top: 20px;
+    /* margin-right: 200px; */
+}
+.first-left{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    /* overflow: hidden; */
+    margin-left: 7px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+}
+.first-left .icons{
+    font-size: 20px;
+    background-color: #187ff2;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.first-left .icons:hover{
+    background-color: #1877f2;
+    color: #fff;
+    cursor: pointer;
+}
+.first-left p{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+.first-left .first-img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.second2{
+    position: relative;
+}
+.second2 .small{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #1877f2;
+}
+.second2 .second{
+    height: 100%;
+}
+.second2 p{
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    color: #fff;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.mind{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.mind img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.mind input{
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+    padding: 10px;
+    width: 450px;   
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.container1 a{
+    margin: 0px 10px;
+}
+.post1{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.postimg{
+    display: flex;
+    align-items: center;
+}
+.postimg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column; /* جعل العناصر تحت بعضها */
+  margin-left: 10px;      /* مسافة بين صورة البروفايل والاسم */
+}
+
+.user-name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #65676b;         /* لون رمادي خفيف زي فيسبوك */
+}
+.icons2 a{
+    color: gray;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 20px;
+
+}
+.post-img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.react{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+.right-side{
+    background-color: #f0f2f5;
+    width: 25%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.right-side:hover{
+    overflow: scroll;
+}
+.contant{
+    display: flex;
+    justify-content: space-between;
+        margin: 10px 0px;
+
+    
+}
+.contant p{
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    margin-right: 10px;
+
+}
+.icons3 .fa-solid{
+    text-decoration: none;
+    color: grey;  
+    font-size: 20px;
+    margin: 0px 10px;
+
+}
+.users li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   Facebook Information
+========================= */
+
+.facebook-info {
+    width: 500px;
+    margin-top: -70px;
+}
+
+.facebook-info h1 {
+    color: #1877f2;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.facebook-info p {
+    font-size: 28px;
+    line-height: 1.25;
+
+    color: #1c1e21;
+}
+
+
+/* =========================
+   Login Section
+========================= */
+
+.login-section {
+    width: 396px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Login Box
+========================= */
+
+.login-box {
+    background-color: #fff;
+
+    padding: 16px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.1),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   Inputs
+========================= */
+
+.login-box input {
+    width: 100%;
+    height: 52px;
+
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+
+    padding: 0 16px;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #1877f2;
+
+    box-shadow:
+        0 0 0 2px rgba(24, 119, 242, 0.15);
+}
+
+.login-box input::placeholder {
+    color: #8a8d91;
+}
+
+
+/* =========================
+   Login Button
+========================= */
+
+.login-btn {
+    height: 50px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #1877f2;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+
+/* =========================
+   Forgotten Password
+========================= */
+
+.forgot-password {
+    display: block;
+
+    color: #1877f2;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    margin: 18px 0;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Line
+========================= */
+
+.line {
+    height: 1px;
+
+    background-color: #dadde1;
+
+    margin: 20px 0;
+}
+
+
+/* =========================
+   Create Account
+========================= */
+
+.create-account {
+    background-color: #42b72a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    height: 48px;
+
+    padding: 0 20px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin: auto;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+}
+
+
+/* =========================
+   Create Page
+========================= */
+
+.create-page {
+    font-size: 14px;
+
+    color: #1c1e21;
+
+    margin-top: 28px;
+
+    line-height: 1.4;
+}
+
+.create-page a {
+    color: #1c1e21;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .login-page {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .facebook-info {
+        width: 396px;
+
+        text-align: center;
+
+        margin-top: 0;
+    }
+
+    .facebook-info h1 {
+        font-size: 50px;
+    }
+
+    .facebook-info p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .login-page {
+        padding: 15px;
+    }
+
+    .facebook-info,
+    .login-section {
+        width: 100%;
+        max-width: 396px;
+    }
+
+    .facebook-info h1 {
+        font-size: 45px;
+    }
+
+    .facebook-info p {
+        display: none;
+    }
+}
